@@ -1,53 +1,47 @@
-# Hello World with Vanilla JS
+# Hola Mundo con Vanilla JS
 
-> 🇪🇸 [Spanish version of this readme is available](./README.es.md).
+Empieza a programar un sitio web JS/HTML/CSS en 30 segundos abriendo esta plantilla con nuestro puente de [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/vanillajs-hello) o localmente en tu computador.
 
-Start coding a JS/HTML/CSS website in 30 seconds by opening this template using 4Geeks' [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/vanillajs-hello) or locally on your computer.
+## Antes de empezar
 
-## Before you begin
+Una vez tu editor de codigo este abierto, instala los paquetes escribiendo: `npm install`.
 
-Install the packages by typing: `npm install`.
+### ¿Cómo ejecuto mi sitio web para ver los cambios en vivo?
 
+Escribe en la línea de comandos `$ npm run start` y escribe localhost en el navegador.
 
-### How do I run my website to see live changes?  
+### ¿Dónde escribo mi código?
 
+Depende del lenguaje, pero tienes `./src/app.js`, `./src/style.css` y `./src/index.html` respectivamente. Puedes agregar nuevos `.html` como desees, solo asegúrate de importarlo en el `app.js`.
 
-Type on the command line `$ npm run start` and type localhost on the browser.
+> Nota: recuerda que el flujo de trabajo de JS comienza dentro de `window.onload`.
 
-### Where do I write my code?  
+## Resolución de problemas
 
-It depends on the language, but you have `./src/app.js`, `./src/style.css` and `./src/index.html` respectively, you can add new `.html` as you please, just make sure to import it on the `app.js`.
+### No veo mis cambios...
 
-> Note: remember that the JS workflow starts inside `window.onload`.
+Cada vez que cambies cualquier archivo dentro de la carpeta `./src`, la URL pública del sitio web se actualizará automáticamente (es un proceso llamado hot deploy). Recuerda también actualizar limpiando la caché (`command+shift+r` en Mac, `control+shift+r` en PC y Linux).
 
+### ¿Cómo incluyo más imágenes en mi proyecto?
 
-## Troubleshooting
+Agrégalas dentro de la carpeta `./src/assets/img` y luego impórtalas desde cualquiera de tus archivos JS. Ejemplo: `import "../assets/img/rigo-baby.jpg";`.
 
-### I don't see my changes...
+### ¿Cómo incluyo más archivos JS?
 
-Everytime you change any file inside the `./src` folder the website's public URL will automatically refresh the changes (it's a process called hot deploy)
-Remember also to refresh cleaning the cache (`command+shift+r` on Mac, `control+shift+r` on PC & Linux)
+Simplemente agrega los archivos en la carpeta src e importa los archivos/variables en tu app.js. Ejemplo: `import myVar from "./file2.js"`.
 
-### How do I include more images in my project?
+### ¿Cómo publico el sitio web?
 
-Add them inside the `./src/assets/img` folder and import them from any of your JS files. E.g: `import "../assets/img/rigo-baby.jpg";`
-
-### How do I include more JS files?
-
-Just add the files into the src folder and import the file/variables into your app.js. E.g: `import myVar from "./file2.js"`
-
-### How do I publish the website?
-
-This boilerplate is 100% compatible with the free GitHub pages hosting. Publish your website by running:
+Esta plantilla es 100% compatible con el alojamiento gratuito de GitHub Pages. Publica tu sitio web ejecutando:
 
 ```bash
 $ npm run deploy
 ```
 
-Very easy and in just one step!  Push to your __main__ branch and use the free hosting that comes with [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages), the project is ready to be published. Remember to choose to run the Github Page from your main branch.
+¡Muy fácil y en solo un paso! Sube a tu rama __main__ y utiliza el alojamiento gratuito que viene con [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages), el proyecto está listo para ser publicado. Recuerda elegir ejecutar la Página de GitHub desde tu rama principal.
 
-### Thank you
+### Gracias
 
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) or [CyberSecurity Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/cybersecurity)
+Esta plantilla fue creada como parte del [curso de programacion](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) de 4Geeks Academy por [Alejandro Sanchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Descubre más sobre nuestro [Curso de Desarrollador Full Stack](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack?lang=es), [Bootcamp de Ciencia de Datos](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning?lang=es) o [Curso de Ciberseguridad](https://4geeksacademy.com/es/coding-bootcamps/curso-ciberseguridad?lang=es).
 
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+Puedes encontrar otras plantillas y recursos como este en la [página de GitHub de la escuela](https://github.com/4geeksacademy/).
