@@ -34,21 +34,62 @@ checkbox2.addEventListener("change", function() {
 });
 
 let ejcusegenerador = () => {
-  let who = ["The dog", "My grandma", "The mailman", "My bird"];
-  let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "my phone", "the car"];
+  let who = [
+    "The dog",
+    "My grandma",
+    "The mailman",
+    "My bird",
+    "My cat",
+    "A stranger",
+    "My neighbor",
+    "A ghost",
+    "My best friend",
+    "A superhero"
+  ];
+  let action = [
+    "ate",
+    "peed",
+    "crushed",
+    "broke",
+    "stole",
+    "hid",
+    "burned",
+    "lost",
+    "destroyed",
+    "tore"
+  ];
+  let what = [
+    "my homework",
+    "my phone",
+    "the car",
+    "my book",
+    "my keys",
+    "my laptop",
+    "my project",
+    "my shoes",
+    "my lunch"
+  ];
   let when = [
     "before the class",
     "when I was sleeping",
     "while I was exercising",
     "during my lunch",
-    "while I was praying"
+    "while I was praying",
+    "in the morning",
+    "last night",
+    "during the meeting",
+    "while I was cooking",
+    "when I was jogging",
+    "while I was on a call"
   ];
 
+  // excusa aleatoria recursiva
   let whoIndex = Math.floor(Math.random() * who.length);
   let actionIndex = Math.floor(Math.random() * action.length);
   let whatIndex = Math.floor(Math.random() * what.length);
   let whenIndex = Math.floor(Math.random() * when.length);
+
+  // Forzado a Seleccion
 
   if (abuelaCheck) {
     whoIndex = 1;
@@ -57,10 +98,13 @@ let ejcusegenerador = () => {
     whatIndex = 0;
   }
   if (brokeCheck) {
-    actionIndex = 1;
+    actionIndex = 1; //jajaja esta roto
   }
 
+  //vuelta de la funcion - construccion de frase
+
   return (
+    "Jo tiiiio Ejque " +
     who[whoIndex] +
     " " +
     action[actionIndex] +
