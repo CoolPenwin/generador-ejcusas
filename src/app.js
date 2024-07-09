@@ -12,15 +12,25 @@ window.onload = () => {
   document.querySelector("#ejcusa").innerHTML = ejcusegenerador();
   console.log("Hello Rigo ejcuseme on the console too!");
 };
-var abuelaCheck = false; // Definimos la variable global
+// Definimos la variable global
+var abuelaCheck = false;
+var deberesCheck = false;
+var brokeCheck = false;
 
 // Seleccionamos el checkbox
-var checkbox = document.getElementById("abuela");
+let checkbox = document.getElementById("abuela");
+let checkbox1 = document.getElementById("deberes");
+let checkbox2 = document.getElementById("broke");
 
 // Agregamos el event listener
 checkbox.addEventListener("change", function() {
   abuelaCheck = checkbox.checked; // Cambiamos el valor de la variable global según el estado del checkbox
-  console.log("abuelaCheck es ahora:", abuelaCheck); // Para verificar el cambio
+});
+checkbox1.addEventListener("change", function() {
+  deberesCheck = checkbox1.checked; // Cambiamos el valor de la variable global según el estado del checkbox
+});
+checkbox2.addEventListener("change", function() {
+  brokeCheck = checkbox2.checked; // Cambiamos el valor de la variable global según el estado del checkbox
 });
 
 let ejcusegenerador = () => {
@@ -42,6 +52,12 @@ let ejcusegenerador = () => {
 
   if (abuelaCheck) {
     whoIndex = 1;
+  }
+  if (deberesCheck) {
+    whatIndex = 0;
+  }
+  if (brokeCheck) {
+    actionIndex = 1;
   }
 
   return (
