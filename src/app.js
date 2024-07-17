@@ -7,10 +7,9 @@ import "./assets/img/4geeks.ico";
 
 window.onload = () => {
   document.querySelector("#reload").addEventListener("click", () => {
-    document.querySelector("#ejcusa").innerHTML = ejcusegenerador();
+    document.querySelector("#Excusa").innerHTML = generadorExcusas();
   });
-  document.querySelector("#ejcusa").innerHTML = ejcusegenerador();
-  console.log("Hello Rigo ejcuseme on the console too!");
+  document.querySelector("#Excusa").innerHTML = generadorExcusas();
 };
 // Definimos la variable global
 var abuelaCheck = false;
@@ -18,22 +17,22 @@ var deberesCheck = false;
 var brokeCheck = false;
 
 // Seleccionamos el checkbox
-let checkbox = document.getElementById("abuela");
-let checkbox1 = document.getElementById("deberes");
-let checkbox2 = document.getElementById("broke");
+let checkboxAbuela = document.getElementById("abuela");
+let checkboxDeberes = document.getElementById("deberes");
+let checkboxBroken = document.getElementById("broke");
 
 // Agregamos el event listener
-checkbox.addEventListener("change", function() {
-  abuelaCheck = checkbox.checked; // Cambiamos el valor de la variable global según el estado del checkbox
+checkboxAbuela.addEventListener("change", function() {
+  abuelaCheck = checkboxAbuela.checked; // Cambiamos el valor de la variable global según el estado del checkbox
 });
-checkbox1.addEventListener("change", function() {
-  deberesCheck = checkbox1.checked; // Cambiamos el valor de la variable global según el estado del checkbox
+checkboxDeberes.addEventListener("change", function() {
+  deberesCheck = checkboxDeberes.checked; // Cambiamos el valor de la variable global según el estado del checkbox
 });
-checkbox2.addEventListener("change", function() {
-  brokeCheck = checkbox2.checked; // Cambiamos el valor de la variable global según el estado del checkbox
+checkboxBroken.addEventListener("change", function() {
+  brokeCheck = checkboxBroken.checked; // Cambiamos el valor de la variable global según el estado del checkbox
 });
 
-let ejcusegenerador = () => {
+let generadorExcusas = () => {
   let who = [
     "The dog",
     "My grandma",
@@ -98,7 +97,7 @@ let ejcusegenerador = () => {
     whatIndex = 0;
   }
   if (brokeCheck) {
-    actionIndex = 1; //jajaja esta roto
+    actionIndex = 1; // esta muy roto
   }
 
   //vuelta de la funcion - construccion de frase
